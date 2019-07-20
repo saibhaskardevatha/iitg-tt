@@ -25,7 +25,7 @@
 			<header class="codrops-header">
 				<h1>sophomore year.<span>edit your elective.</span></h1>
 			</header>
-			<form action="edit-3.php" method="POST">
+			<form action="./helpers/edit-3.php" method="POST">
 				<section class="content-drop">
 					<select class="cs-select cs-skin-overlay" required>
 						<option value="" disabled selected>Select your HSS Elective</option>
