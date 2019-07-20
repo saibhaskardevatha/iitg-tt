@@ -25,7 +25,7 @@
 			<header class="codrops-header">
 				<h1>senior year.<span>edit your electives.</span></h1>
 			</header>
-			<form action="edit-8.php" method="POST">
+			<form action="../helpers/edit-8.php" method="POST">
 				<section class="content-drop">
 					<select class="cs-select cs-skin-overlay" required style="z-index:1000;">
 						<option value="" disabled selected>Select your Department Elective 1</option>

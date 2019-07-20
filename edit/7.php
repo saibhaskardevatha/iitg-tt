@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>sophomore edit.</title>
+		<title>senior edit.</title>
 		<meta name="keywords" content="iitg, guwahati, iit, timetable, academic, calendar, ece, eee" />
 		<meta name="author" content="Sai Bhaskar Devatha" />
 		<link rel="shortcut icon" href="../favicon.ico">
@@ -23,12 +23,44 @@
 	<body class="bgcolor-1">
 		<div class="container">
 			<header class="codrops-header">
-				<h1>sophomore year.<span>edit your elective.</span></h1>
+				<h1>senior year.<span>edit your electives.</span></h1>
 			</header>
-			<form action="edit-4.php" method="POST">
+			<form action="../helpers/edit-7.php" method="POST">
 				<section class="content-drop">
-					<select class="cs-select cs-skin-overlay" required>
-						<option value="" disabled selected>Select your HSS Elective</option>
+					<select class="cs-select cs-skin-overlay" required style="z-index:1000;">
+						<option value="" disabled selected>Select your Department Elective 1</option>
+						<optgroup>
+							<option value="1">Salmon Pecorino with Girolle Sauce</option>
+							<option value="2">Pan-fried Gnocci in Tomato Sauce</option>
+							<option value="3">Maple Glazed Potatoes in Truffle Reduction</option>
+							<option value="4">Tenderstem Broccoli in Artichoke Vinaigrette</option>
+						</optgroup>
+						<optgroup>
+							<option value="5">Smoked Herring in Oyster Gel</option>
+							<option value="6">Broad Beans in Sea Rosemary Sauce</option>
+							<option value="7">Grilled Asparagus with Pickled Apple</option>
+							<option value="8">Cold-smoked Eel with Sea Purslane </option>
+						</optgroup>
+					</select>
+	
+					<select class="cs-select cs-skin-overlay" required style="z-index:800;">
+						<option value="" disabled selected>Select your Department Elective 2</option>
+						<optgroup>
+							<option value="1">Salmon Pecorino with Girolle Sauce</option>
+							<option value="2">Pan-fried Gnocci in Tomato Sauce</option>
+							<option value="3">Maple Glazed Potatoes in Truffle Reduction</option>
+							<option value="4">Tenderstem Broccoli in Artichoke Vinaigrette</option>
+						</optgroup>
+						<optgroup>
+							<option value="5">Smoked Herring in Oyster Gel</option>
+							<option value="6">Broad Beans in Sea Rosemary Sauce</option>
+							<option value="7">Grilled Asparagus with Pickled Apple</option>
+							<option value="8">Cold-smoked Eel with Sea Purslane </option>
+						</optgroup>
+					</select>
+	
+					<select class="cs-select cs-skin-overlay" required style="z-index:600;">
+						<option value="" disabled selected>Select your Open Elective</option>
 						<optgroup>
 							<option value="1">Salmon Pecorino with Girolle Sauce</option>
 							<option value="2">Pan-fried Gnocci in Tomato Sauce</option>
