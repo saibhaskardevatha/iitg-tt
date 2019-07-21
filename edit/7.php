@@ -22,7 +22,7 @@
 	</head>
 	<body class="bgcolor-1">
 	<?php
-		include("helpers/config.php");
+		include("../helpers/config.php");
 		// Create connection
 		$conn = mysqli_connect($servername, $username, $password, $dbname);
 		// Check connection
