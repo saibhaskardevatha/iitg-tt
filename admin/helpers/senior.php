@@ -25,8 +25,10 @@
         $event_id = 'event-2';
     }else if($type == 'ece'){
         $event_id = 'event-3';
-    }else{
+    }else if($type == 'eee'){
         $event_id = 'event-4';
+    }else{
+        $event_id = 'event-5';
     }
 
     include("../../helpers/config.php");
