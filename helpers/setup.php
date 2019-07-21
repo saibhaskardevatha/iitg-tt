@@ -18,7 +18,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     
     switch($year){
         case '8':
-            sql = "SELECT * from roll_data_8 where roll = $roll";
+            $sql = "SELECT * from roll_data_8 where roll = $roll";
             $result = mysqli_query($conn, $sql);
             $result = mysqli_fetch_assoc($result);
 
@@ -30,7 +30,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
             mysqli_close($conn);
             break;
         case '7':
-            sql = "SELECT * from roll_data_7 where roll = $roll";
+            $sql = "SELECT * from roll_data_7 where roll = $roll";
             $result = mysqli_query($conn, $sql);
             $result = mysqli_fetch_assoc($result);
 
