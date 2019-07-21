@@ -23,11 +23,12 @@
                                     <select name="type" id="type">
                                         <option value="de">Department Elective</option>
                                         <option value="oe">Open Elective</option>
-                                        <option value="hss">HSS Course</option>
+                                        <option value="ece4">ECE</option>
+                                        <option value="eee4">EEE</option>
                                     </select>
                                 </div><br>
-                                <input type="text" name="id" id="id" placeholder="Course ID" /><br>
-                                <input type="text" name="name" id="name" placeholder="Course Name" /><br>
+                                <input type="text" name="id" id="id" placeholder="Course ID (Small Letters and without spaces)" /><br>
+                                <input type="text" name="name" id="name" placeholder="Course Name (As Short as possible)" /><br>
                                 <input type="text" name="venue" id="venue" placeholder="Venue" /><br>
                                 <div class="row uniform">
                                     <div class="4u 12u">
