@@ -43,7 +43,6 @@
 							$result = mysqli_query($conn, $sql);	
 							$count = mysqli_num_rows($result);
 							$half = round($count/2);
-							echo $half;
 							if (mysqli_num_rows($result) > 0) {
 								// output data of each row
 								echo "<optgroup>";
@@ -66,34 +65,56 @@
 	
 					<select class="cs-select cs-skin-overlay" required style="z-index:800;">
 						<option value="" disabled selected>Select your Department Elective 2</option>
-						<optgroup>
-							<option value="1">Salmon Pecorino with Girolle Sauce</option>
-							<option value="2">Pan-fried Gnocci in Tomato Sauce</option>
-							<option value="3">Maple Glazed Potatoes in Truffle Reduction</option>
-							<option value="4">Tenderstem Broccoli in Artichoke Vinaigrette</option>
-						</optgroup>
-						<optgroup>
-							<option value="5">Smoked Herring in Oyster Gel</option>
-							<option value="6">Broad Beans in Sea Rosemary Sauce</option>
-							<option value="7">Grilled Asparagus with Pickled Apple</option>
-							<option value="8">Cold-smoked Eel with Sea Purslane </option>
-						</optgroup>
+						<?php						
+							$sql = "SELECT * FROM courses_6 where type = 'de'";
+							$result = mysqli_query($conn, $sql);	
+							$count = mysqli_num_rows($result);
+							$half = round($count/2);
+							if (mysqli_num_rows($result) > 0) {
+								// output data of each row
+								echo "<optgroup>";
+								while($row = mysqli_fetch_assoc($result)) {
+									if($count > $half){
+										echo "<option value=\"".$row["id"]."\">".$row["name"]."</option>";
+										$count = $count - 1;
+									}else if($count == $half){
+										echo "</optgroup><optgroup><option value=\"".$row["id"]."\">".$row["name"]."</option>";
+										$count = $count - 1;
+									}else {
+										echo "<option value=\"".$row["id"]."\">".$row["name"]."</option>";
+										$count = $count - 1;
+									}
+								}
+								echo "</optgroup>";
+							} 
+						?>
 					</select>
 	
 					<select class="cs-select cs-skin-overlay" required style="z-index:600;">
 						<option value="" disabled selected>Select your Open Elective</option>
-						<optgroup>
-							<option value="1">Salmon Pecorino with Girolle Sauce</option>
-							<option value="2">Pan-fried Gnocci in Tomato Sauce</option>
-							<option value="3">Maple Glazed Potatoes in Truffle Reduction</option>
-							<option value="4">Tenderstem Broccoli in Artichoke Vinaigrette</option>
-						</optgroup>
-						<optgroup>
-							<option value="5">Smoked Herring in Oyster Gel</option>
-							<option value="6">Broad Beans in Sea Rosemary Sauce</option>
-							<option value="7">Grilled Asparagus with Pickled Apple</option>
-							<option value="8">Cold-smoked Eel with Sea Purslane </option>
-						</optgroup>
+						<?php						
+							$sql = "SELECT * FROM courses_6 where type = 'oe'";
+							$result = mysqli_query($conn, $sql);	
+							$count = mysqli_num_rows($result);
+							$half = round($count/2);
+							if (mysqli_num_rows($result) > 0) {
+								// output data of each row
+								echo "<optgroup>";
+								while($row = mysqli_fetch_assoc($result)) {
+									if($count > $half){
+										echo "<option value=\"".$row["id"]."\">".$row["name"]."</option>";
+										$count = $count - 1;
+									}else if($count == $half){
+										echo "</optgroup><optgroup><option value=\"".$row["id"]."\">".$row["name"]."</option>";
+										$count = $count - 1;
+									}else {
+										echo "<option value=\"".$row["id"]."\">".$row["name"]."</option>";
+										$count = $count - 1;
+									}
+								}
+								echo "</optgroup>";
+							} 
+						?>
 					</select>
 				</section>
 				<div class="box">
