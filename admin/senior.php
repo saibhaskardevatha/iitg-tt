@@ -18,7 +18,7 @@
                     <div class="row uniform">
                         <div class="3u 12u(large)"></div>
                         <div class="6u 12u(large)">
-                            <form method="post" action="helpers/course">
+                            <form method="post" action="helpers/senior.php">
                                 <div class="select-wrapper">
                                     <select name="type" id="type">
                                         <option value="de">Department Elective</option>
