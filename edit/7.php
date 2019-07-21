@@ -43,10 +43,10 @@
 							$result = mysqli_query($conn, $sql);
 							$count = mysqli_num_rows($result);
 							$half = $count/2;
-							if (count > 0) {
+							if ($count > 0) {
 								// output data of each row
 								echo "<optgroup>";
-								while($row = mysqli_fetch_assoc($result) && count > $half) {
+								while($row = mysqli_fetch_assoc($result) && $count > $half) {
 									echo "<option value=\"".$row["id"]."\">".$row["name"]."</option>";
 									$count = $count-1;
 								}
