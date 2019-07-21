@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(!isset($_SESSION['roll'])){
+	header('Location: ../');
+}
+?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 	<head>
