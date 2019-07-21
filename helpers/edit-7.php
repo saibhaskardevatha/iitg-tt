@@ -1,8 +1,32 @@
 <?php session_start(); ?>
 <?php
-    echo $_SESSION['roll'];
-    echo $_POST['de1'];
-    echo $_POST['de2'];
-    echo $_POST['oe'];
-    session_destroy();
+    $roll = $_SESSION['roll'];
+    $de1 =  $_POST['de1'];
+    $de2 =  $_POST['de2'];
+    $oe =  $_POST['oe'];
+
+    include('config.php');
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    $sql1 = "SELECT roll from roll_data_6 WHERE roll = $roll";
+    $result = mysqli_query($conn, $sql1);
+    $result = mysqli_fetch_assoc($result);
+    if(!empty($result)){
+        $sql3 = "DELETE FROM roll_data_6 WHERE roll = $roll";
+        $conn->query($sql3);
+    }
+    $sql = "INSERT INTO roll_data_6 (roll, de1, de2, oe)
+    VALUES ($roll, '$de1', '$de2', '$oe')";
+    if ($conn->query($sql) === TRUE) {
+        echo '<script type="text/javascript">
+            window.location = "../tt/4.php"
+        </script>';
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+    
 ?>
