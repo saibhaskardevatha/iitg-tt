@@ -1,5 +1,6 @@
 <?php
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    session_start();
     $roll = $_POST['roll'];
     $year = $roll[1];
     $branch = $roll[5];

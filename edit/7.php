@@ -36,7 +36,7 @@
 			</header>
 			<form action="../helpers/edit-7.php" method="POST">
 				<section class="content-drop">
-					<select class="cs-select cs-skin-overlay" required style="z-index:1000;">
+					<select class="cs-select cs-skin-overlay" required style="z-index:1000;" name="de1">
 						<option value="" disabled selected>Select your Department Elective 1</option>
 						<?php						
 							$sql = "SELECT * FROM courses_6 where type = 'de'";
@@ -63,7 +63,7 @@
 						?>
 					</select>
 	
-					<select class="cs-select cs-skin-overlay" required style="z-index:800;">
+					<select class="cs-select cs-skin-overlay" required style="z-index:800;" name="de2">
 						<option value="" disabled selected>Select your Department Elective 2</option>
 						<?php						
 							$sql = "SELECT * FROM courses_6 where type = 'de'";
@@ -90,7 +90,7 @@
 						?>
 					</select>
 	
-					<select class="cs-select cs-skin-overlay" required style="z-index:600;">
+					<select class="cs-select cs-skin-overlay" required style="z-index:600;" name="oe">
 						<option value="" disabled selected>Select your Open Elective</option>
 						<?php						
 							$sql = "SELECT * FROM courses_6 where type = 'oe'";
