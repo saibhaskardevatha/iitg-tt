@@ -40,16 +40,12 @@
 						<option value="" disabled selected>Select your Department Elective 1</option>
 						<?php						
 							$sql = "SELECT * FROM courses_6 where type = 'de'";
-							$result = mysqli_query($conn, $sql);
-							$count = mysqli_num_rows($result);
-							echo $count;
-							$half = $count/2;	
-							if ($count > 0) {
+							$result = mysqli_query($conn, $sql);	
+							if (mysqli_num_rows($result) > 0) {
 								// output data of each row
 								echo "<optgroup>";
-								while($row = mysqli_fetch_assoc($result) && $count > $half) {
+								while($row = mysqli_fetch_assoc($result)) {
 									echo "<option value=\"".$row["id"]."\">".$row["name"]."</option>";
-									$count = $count-1;
 								}
 								echo "</optgroup><optgroup>";
 								while($row = mysqli_fetch_assoc($result)) {
