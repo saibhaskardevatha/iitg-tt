@@ -41,15 +41,22 @@
 						<?php						
 							$sql = "SELECT * FROM courses_6 where type = 'de'";
 							$result = mysqli_query($conn, $sql);	
+							$count = mysqli_num_rows($result);
+							$half = $count/2;
 							if (mysqli_num_rows($result) > 0) {
 								// output data of each row
 								echo "<optgroup>";
 								while($row = mysqli_fetch_assoc($result)) {
-									echo "<option value=\"".$row["id"]."\">".$row["name"]."</option>";
-								}
-								echo "</optgroup><optgroup>";
-								while($row = mysqli_fetch_assoc($result)) {
-									echo "<option value=\"".$row["id"]."\">".$row["name"]."</option>";
+									if($count > $half){
+										echo "<option value=\"".$row["id"]."\">".$row["name"]."</option>";
+										$count = $count - 1;
+									}else if($count == $half){
+										echo "</optgroup><optgroup><option value=\"".$row["id"]."\">".$row["name"]."</option>";
+										$count = $count - 1;
+									}else {
+										echo "<option value=\"".$row["id"]."\">".$row["name"]."</option>";
+										$count = $count - 1;
+									}
 								}
 								echo "</optgroup>";
 							} 
