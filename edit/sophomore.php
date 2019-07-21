@@ -8,14 +8,14 @@
 		<meta name="keywords" content="iitg, guwahati, iit, timetable, academic, calendar, ece, eee" />
 		<meta name="author" content="Sai Bhaskar Devatha" />
 		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="../assests/css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="../assests/fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" type="text/css" href="../assests/css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="../assests/css/set2.css" />
-		<link rel="stylesheet" type="text/css" href="../assests/css/cs-select.css" />
-		<link rel="stylesheet" type="text/css" href="../assests/css/cs-skin-overlay.css" />
-		<link rel="stylesheet" type="text/css" href="../assests/css/vicons-font.css" />
-		<link rel="stylesheet" type="text/css" href="../assests/css/buttons.css" />
+		<link rel="stylesheet" type="text/css" href="../assets/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../assets/fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="../assets/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="../assets/css/set2.css" />
+		<link rel="stylesheet" type="text/css" href="../assets/css/cs-select.css" />
+		<link rel="stylesheet" type="text/css" href="../assets/css/cs-skin-overlay.css" />
+		<link rel="stylesheet" type="text/css" href="../assets/css/vicons-font.css" />
+		<link rel="stylesheet" type="text/css" href="../assets/css/buttons.css" />
 		<!--[if IE]>
   		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -49,8 +49,8 @@
 			</form>
 		</div><!-- /container -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="../assests/js/classie.js"></script>
-		<script src="../assests/js/selectFx.js"></script>
+		<script src="../assets/js/classie.js"></script>
+		<script src="../assets/js/selectFx.js"></script>
 		<script>
 			(function() {	
 				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
