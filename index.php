@@ -9,10 +9,10 @@
 		<meta name="keywords" content="iitg, guwahati, iit, timetable, academic, calendar, ece, eee" />
 		<meta name="author" content="Sai Bhaskar Devatha" />
 		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/set2.css" />
+		<link rel="stylesheet" type="text/css" href="assests/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="assests/fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="assests/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="assests/css/set2.css" />
 		<!--[if IE]>
   		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -38,7 +38,7 @@
 			</section>
 		</div><!-- /container -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="js/classie.js"></script>
+		<script src="assests/js/classie.js"></script>
 		<script>
 			(function() {
 				// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim

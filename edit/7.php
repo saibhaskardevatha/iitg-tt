@@ -8,19 +8,28 @@
 		<meta name="keywords" content="iitg, guwahati, iit, timetable, academic, calendar, ece, eee" />
 		<meta name="author" content="Sai Bhaskar Devatha" />
 		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="../css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" type="text/css" href="../css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="../css/set2.css" />
-		<link rel="stylesheet" type="text/css" href="../css/cs-select.css" />
-		<link rel="stylesheet" type="text/css" href="../css/cs-skin-overlay.css" />
-		<link rel="stylesheet" type="text/css" href="../css/vicons-font.css" />
-		<link rel="stylesheet" type="text/css" href="../css/buttons.css" />
+		<link rel="stylesheet" type="text/css" href="../assests/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../assests/fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="../assests/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="../assests/css/set2.css" />
+		<link rel="stylesheet" type="text/css" href="../assests/css/cs-select.css" />
+		<link rel="stylesheet" type="text/css" href="../assests/css/cs-skin-overlay.css" />
+		<link rel="stylesheet" type="text/css" href="../assests/css/vicons-font.css" />
+		<link rel="stylesheet" type="text/css" href="../assests/css/buttons.css" />
 		<!--[if IE]>
   		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 	</head>
 	<body class="bgcolor-1">
+	<?php
+		include("helpers/config.php");
+		// Create connection
+		$conn = mysqli_connect($servername, $username, $password, $dbname);
+		// Check connection
+		if (!$conn) {
+			die("Connection failed: " . mysqli_connect_error());
+		}
+	?>
 		<div class="container">
 			<header class="codrops-header">
 				<h1>senior year.<span>edit your electives.</span></h1>
@@ -29,18 +38,25 @@
 				<section class="content-drop">
 					<select class="cs-select cs-skin-overlay" required style="z-index:1000;">
 						<option value="" disabled selected>Select your Department Elective 1</option>
-						<optgroup>
-							<option value="1">Salmon Pecorino with Girolle Sauce</option>
-							<option value="2">Pan-fried Gnocci in Tomato Sauce</option>
-							<option value="3">Maple Glazed Potatoes in Truffle Reduction</option>
-							<option value="4">Tenderstem Broccoli in Artichoke Vinaigrette</option>
-						</optgroup>
-						<optgroup>
-							<option value="5">Smoked Herring in Oyster Gel</option>
-							<option value="6">Broad Beans in Sea Rosemary Sauce</option>
-							<option value="7">Grilled Asparagus with Pickled Apple</option>
-							<option value="8">Cold-smoked Eel with Sea Purslane </option>
-						</optgroup>
+						<?php						
+							$sql = "SELECT * FROM courses_6 where 'type' = 'de'";
+							$result = mysqli_query($conn, $sql);
+							$count = mysqli_num_rows($result);
+							$half = $count/2;
+							if (count > 0) {
+								// output data of each row
+								echo "<optgroup>";
+								while($row = mysqli_fetch_assoc($result) && count > $half) {
+									echo "<option value=\"".$row["id"]."\">".$row["name"]."</option>";
+									$count = $count-1;
+								}
+								echo "</optgroup><optgroup>";
+								while($row = mysqli_fetch_assoc($result)) {
+									echo "<option value=\"".$row["id"]."\">".$row["name"]."</option>";
+								}
+								echo "</optgroup>";
+							} 
+						?>
 					</select>
 	
 					<select class="cs-select cs-skin-overlay" required style="z-index:800;">
@@ -81,8 +97,8 @@
 			</form>
 		</div><!-- /container -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="../js/classie.js"></script>
-		<script src="../js/selectFx.js"></script>
+		<script src="../assests/js/classie.js"></script>
+		<script src="../assests/js/selectFx.js"></script>
 		<script>
 			(function() {	
 				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
