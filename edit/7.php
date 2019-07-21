@@ -42,7 +42,7 @@
 							$sql = "SELECT * FROM courses_6 where type = 'de'";
 							$result = mysqli_query($conn, $sql);	
 							$count = mysqli_num_rows($result);
-							$half = $count/2;
+							$half = (int)$count/2;
 							if (mysqli_num_rows($result) > 0) {
 								// output data of each row
 								echo "<optgroup>";
