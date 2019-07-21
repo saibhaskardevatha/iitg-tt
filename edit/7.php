@@ -43,6 +43,7 @@
 							$result = mysqli_query($conn, $sql);	
 							$count = mysqli_num_rows($result);
 							$half = (int)$count/2;
+							echo $half;
 							if (mysqli_num_rows($result) > 0) {
 								// output data of each row
 								echo "<optgroup>";
