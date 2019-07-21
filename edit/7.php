@@ -39,10 +39,11 @@
 					<select class="cs-select cs-skin-overlay" required style="z-index:1000;">
 						<option value="" disabled selected>Select your Department Elective 1</option>
 						<?php						
-							$sql = "SELECT * FROM courses_6 where 'type' = 'de'";
+							$sql = "SELECT * FROM courses_6 where type = 'de'";
 							$result = mysqli_query($conn, $sql);
 							$count = mysqli_num_rows($result);
-							$half = $count/2;
+							echo $count;
+							$half = $count/2;	
 							if ($count > 0) {
 								// output data of each row
 								echo "<optgroup>";
