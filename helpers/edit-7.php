@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <?php
     echo $_SESSION['roll'];
     echo $_POST['de1'];
