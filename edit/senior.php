@@ -40,12 +40,12 @@ if(!isset($_SESSION['roll'])){
 			<header class="codrops-header">
 				<h1>senior year.<span>edit your electives.</span></h1>
 			</header>
-			<form action="../helpers/edit-7.php" method="POST">
+			<form action="../helpers/senior.php" method="POST">
 				<section class="content-drop">
 					<select class="cs-select cs-skin-overlay" required style="z-index:1000;" name="de1">
 						<option value="" disabled selected>Select your Department Elective 1</option>
 						<?php						
-							$sql = "SELECT * FROM courses_6 where type = 'de'";
+							$sql = "SELECT * FROM courses_senior where type = 'de'";
 							$result = mysqli_query($conn, $sql);	
 							$count = mysqli_num_rows($result);
 							$half = round($count/2);
@@ -72,7 +72,7 @@ if(!isset($_SESSION['roll'])){
 					<select class="cs-select cs-skin-overlay" required style="z-index:800;" name="de2">
 						<option value="" disabled selected>Select your Department Elective 2</option>
 						<?php						
-							$sql = "SELECT * FROM courses_6 where type = 'de'";
+							$sql = "SELECT * FROM courses_senior where type = 'de'";
 							$result = mysqli_query($conn, $sql);	
 							$count = mysqli_num_rows($result);
 							$half = round($count/2);
@@ -99,7 +99,7 @@ if(!isset($_SESSION['roll'])){
 					<select class="cs-select cs-skin-overlay" required style="z-index:600;" name="oe">
 						<option value="" disabled selected>Select your Open Elective</option>
 						<?php						
-							$sql = "SELECT * FROM courses_6 where type = 'oe'";
+							$sql = "SELECT * FROM courses_senior where type = 'oe'";
 							$result = mysqli_query($conn, $sql);	
 							$count = mysqli_num_rows($result);
 							$half = round($count/2);

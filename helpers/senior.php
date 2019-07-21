@@ -12,18 +12,18 @@
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    $sql1 = "SELECT roll from roll_data_6 WHERE roll = $roll";
+    $sql1 = "SELECT roll from roll_data_senior WHERE roll = $roll";
     $result = mysqli_query($conn, $sql1);
     $result = mysqli_fetch_assoc($result);
     if(!empty($result)){
-        $sql3 = "DELETE FROM roll_data_6 WHERE roll = $roll";
+        $sql3 = "DELETE FROM roll_data_senior WHERE roll = $roll";
         $conn->query($sql3);
     }
-    $sql = "INSERT INTO roll_data_6 (roll, de1, de2, oe)
+    $sql = "INSERT INTO roll_data_senior (roll, de1, de2, oe)
     VALUES ($roll, '$de1', '$de2', '$oe')";
     if ($conn->query($sql) === TRUE) {
         echo '<script type="text/javascript">
-            window.location = "../tt/4.php"
+            window.location = "../senior/"
         </script>';
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;

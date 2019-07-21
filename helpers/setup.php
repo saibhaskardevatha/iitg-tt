@@ -19,43 +19,43 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     
     switch($year){
         case '8':
-            $sql = "SELECT * from roll_data_8 where roll = $roll";
+            $sql = "SELECT * from roll_data_sophomore where roll = $roll";
             $result = mysqli_query($conn, $sql);
             $result = mysqli_fetch_assoc($result);
 
             if(empty($result)){
-                header('Location: ../edit/3.php'); 
+                header('Location: ../edit/sophomore.php'); 
             }else{
-                header('Location: ../tt/2.php');
+                header('Location: ../sophomore/');
             }
             mysqli_close($conn);
             break;
         case '7':
-            $sql = "SELECT * from roll_data_7 where roll = $roll";
+            $sql = "SELECT * from roll_data_junior where roll = $roll";
             $result = mysqli_query($conn, $sql);
             $result = mysqli_fetch_assoc($result);
 
             if(empty($result)){
-                header('Location: ../edit/5.php'); 
+                header('Location: ../edit/junior.php'); 
             }else{
-                header('Location: ../tt/3.php');
+                header('Location: ../junior/');
             }
             mysqli_close($conn);
             break;
         case '6':
-            $sql = "SELECT * from roll_data_6 where roll = $roll";
+            $sql = "SELECT * from roll_data_senior where roll = $roll";
             $result = mysqli_query($conn, $sql);
             $result = mysqli_fetch_assoc($result);
 
             if(empty($result)){
-                header('Location: ../edit/7.php'); 
+                header('Location: ../edit/senior.php'); 
             }else{
-                header('Location: ../tt/4.php');
+                header('Location: ../senior/');
             }
             mysqli_close($conn);
             break;
         case '9':
-            header('Location: ../tt/1.php');
+            header('Location: ../fresher/.php');
             break;
     }
 }else{
