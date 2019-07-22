@@ -111,7 +111,7 @@
                         <div class="3u$ 12u(large)"></div>
                     </div>
                     <div class="inner">
-                    <div class="row uniform">
+                    <div class="uniform">
                         <div class="3u 12u(large)"></div>
                         <div class="6u 12u(large)">
                             <form method="post" action="helpers/fresher_lab.php">
