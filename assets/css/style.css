@@ -55,11 +55,11 @@ Main Components
 @media only screen and (min-width:1000px){
   .cd-intro h1{
     font-size:3em;
-    padding:1em 5% .5em;
+    padding:.8em 5% .5em;
     letter-spacing: -1px;
   }
   .cd-intro h3{
-    font-size:1em;
+    font-size:1.2em;
     letter-spacing: -1px;
   }
 }
