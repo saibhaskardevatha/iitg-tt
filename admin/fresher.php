@@ -119,6 +119,14 @@
                         <div class="3u 12u(large)"></div>
                         <div class="6u 12u(large)">
                             <form method="post" action="helpers/fresher_lab.php">
+                                <div class="select-wrapper">
+                                    <select name="event_id" id="event_id">
+                                        <option value="event-1">Event 1</option>
+                                        <option value="event-2">Event 2</option>
+                                        <option value="event-3">Event 3</option>
+                                        <option value="event-4">Event 4</option>
+                                    </select>
+                                </div><br>
                                 <input type="text" name="id" id="id" placeholder="Course ID (Small Letters and without spaces)" /><br>
                                 <input type="text" name="name" id="name" placeholder="Course Name (As Short as possible)" /><br>
                                 <input type="text" name="venue" id="venue" placeholder="Venue" /><br>

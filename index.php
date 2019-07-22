@@ -5,7 +5,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>timetable.</title>
-		<meta name="description" content="A simple utility for all years of ECE/EEE students." />
 		<meta name="keywords" content="iitg, guwahati, iit, timetable, academic, calendar, ece, eee" />
 		<meta name="author" content="Sai Bhaskar Devatha" />
 		<link rel="shortcut icon" href="../favicon.ico">

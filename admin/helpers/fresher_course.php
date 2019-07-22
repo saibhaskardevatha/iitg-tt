@@ -17,7 +17,7 @@
     $time4 = $time1_explode[1];
     $time5 = $time2_explode[1];
     $time6 = $time3_explode[1];
-    $event_id = 'event-2';
+    $event_id = $_POST['event_id'];
 
     include("../../helpers/config.php");
     // Create connection
