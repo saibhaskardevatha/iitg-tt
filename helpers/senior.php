@@ -26,7 +26,7 @@
         $conn->query($sql3);
     }
     $sql = "INSERT INTO roll_data_senior (roll, branch, de1, de2, oe)
-    VALUES ($roll, ,'$branch', '$de1', '$de2', '$oe')";
+    VALUES ($roll, '$branch', '$de1', '$de2', '$oe')";
     if ($conn->query($sql) === TRUE) {
         echo '<script type="text/javascript">
             window.location = "../senior/"
