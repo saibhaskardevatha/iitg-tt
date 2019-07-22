@@ -55,7 +55,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
             mysqli_close($conn);
             break;
         case '9':
-            header('Location: ../fresher/.php');
+            header('Location: fresher.php');
             break;
     }
 }else{
