@@ -62,8 +62,8 @@ if($branch == 'eee'){
 }
 
 ?>
-<header class="codrops-header">
-	<h1>timetable.<span><a href="../edit/senior.php">Edit Electives</a></span></h1>
+<header class="cd-intro">
+	<h1>timetable.</h1><span><a href="../edit/senior.php">Edit Electives</a></span>
 </header>
 <div class="cd-schedule loading">
 	<div class="timeline">

@@ -72,20 +72,24 @@ Main Components
   text-align:center;
   padding:2.6em 5% .8em;
   font-weight:700;
-  font-size:3rem
+  font-size:3rem;
+  letter-spacing: -1px;
 }
 
 .cd-intro h3{
   text-align:center;
-  font-size:1.5rem
+  font-size:1.5rem;
+  letter-spacing: -1px;
 }
 @media only screen and (min-width:1000px){
   .cd-intro h1{
     font-size:3rem;
     padding:1em 5% .5em;
+    letter-spacing: -1px;
   }
   .cd-intro h3{
     font-size:2rem;
+    letter-spacing: -1px;
   }
 }
 
