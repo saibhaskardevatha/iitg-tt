@@ -5,6 +5,12 @@
     $de2 =  $_POST['de2'];
     $oe =  $_POST['oe'];
 
+    if($_SESSION['branch'] == '2'){
+        $branch = 'ece';
+    }else{
+        $branch = 'eee';
+    }
+
     include('config.php');
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -19,8 +25,8 @@
         $sql3 = "DELETE FROM roll_data_senior WHERE roll = $roll";
         $conn->query($sql3);
     }
-    $sql = "INSERT INTO roll_data_senior (roll, de1, de2, oe)
-    VALUES ($roll, '$de1', '$de2', '$oe')";
+    $sql = "INSERT INTO roll_data_senior (roll, branch, de1, de2, oe)
+    VALUES ($roll, ,'$branch', '$de1', '$de2', '$oe')";
     if ($conn->query($sql) === TRUE) {
         echo '<script type="text/javascript">
             window.location = "../senior/"

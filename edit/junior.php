@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(!isset($_SESSION['roll'])){
+	header('Location: ../');
+}
+?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 	<head>
@@ -21,26 +27,46 @@
 		<![endif]-->
 	</head>
 	<body class="bgcolor-1">
+	<?php
+		include("../helpers/config.php");
+		// Create connection
+		$conn = mysqli_connect($servername, $username, $password, $dbname);
+		// Check connection
+		if (!$conn) {
+			die("Connection failed: " . mysqli_connect_error());
+		}
+	?>
 		<div class="container">
 			<header class="codrops-header">
 				<h1>junior year.<span>edit your elective.</span></h1>
 			</header>
-			<form action="../helpers/edit-5.php" method="POST">
+			<form action="../helpers/junior.php" method="POST">
 				<section class="content-drop">
-					<select class="cs-select cs-skin-overlay" required>
+					<select class="cs-select cs-skin-overlay" required name="hss">
 						<option value="" disabled selected>Select your HSS Elective</option>
-						<optgroup>
-							<option value="1">Salmon Pecorino with Girolle Sauce</option>
-							<option value="2">Pan-fried Gnocci in Tomato Sauce</option>
-							<option value="3">Maple Glazed Potatoes in Truffle Reduction</option>
-							<option value="4">Tenderstem Broccoli in Artichoke Vinaigrette</option>
-						</optgroup>
-						<optgroup>
-							<option value="5">Smoked Herring in Oyster Gel</option>
-							<option value="6">Broad Beans in Sea Rosemary Sauce</option>
-							<option value="7">Grilled Asparagus with Pickled Apple</option>
-							<option value="8">Cold-smoked Eel with Sea Purslane </option>
-						</optgroup>
+						<?php						
+							$sql = "SELECT * FROM courses_senior where type = 'hss'";
+							$result = mysqli_query($conn, $sql);	
+							$count = mysqli_num_rows($result);
+							$half = round($count/2);
+							if (mysqli_num_rows($result) > 0) {
+								// output data of each row
+								echo "<optgroup>";
+								while($row = mysqli_fetch_assoc($result)) {
+									if($count > $half){
+										echo "<option value=\"".$row["id"]."\">".$row["name"]."</option>";
+										$count = $count - 1;
+									}else if($count == $half){
+										echo "</optgroup><optgroup><option value=\"".$row["id"]."\">".$row["name"]."</option>";
+										$count = $count - 1;
+									}else {
+										echo "<option value=\"".$row["id"]."\">".$row["name"]."</option>";
+										$count = $count - 1;
+									}
+								}
+								echo "</optgroup>";
+							} 
+						?>
 					</select>
 				</section>
 				<div class="box">

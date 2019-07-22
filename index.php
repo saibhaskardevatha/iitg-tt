@@ -34,7 +34,7 @@
 				</form>
 				
 				<p>developed by </p>
-				<h4><a href="https://www.saibhaskardevatha.co.in/" target="_blank">sai bhaskar devatha.</a></h4>
+				<h4><a href="https://www.facebook.com/saibhaskar.devatha" target="_blank">sai bhaskar devatha.</a></h4>
 			</section>
 		</div><!-- /container -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
