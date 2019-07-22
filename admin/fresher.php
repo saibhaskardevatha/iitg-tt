@@ -110,8 +110,12 @@
                         </form>
                         <div class="3u$ 12u(large)"></div>
                     </div>
-                    <div class="inner">
-                    <div class="uniform">
+                    </div>
+				</div>
+            </section>
+            <section id="main" class="wrapper" style="padding-top:1.5em;padding-bottom: 0">
+            <div class="inner">
+                    <div class="row uniform">
                         <div class="3u 12u(large)"></div>
                         <div class="6u 12u(large)">
                             <form method="post" action="helpers/fresher_lab.php">
@@ -150,8 +154,7 @@
                         <div class="3u$ 12u(large)"></div>
                     </div>
 				</div></div>
-
-			</section>
+            </section>
 
 		<!-- Scripts -->
 			<script src="../assets/js/jquery.min.js"></script>
