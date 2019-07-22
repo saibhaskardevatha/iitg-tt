@@ -63,8 +63,7 @@ if($branch == 'eee'){
 
 ?>
 <header class="codrops-header">
-	<h1>timetable.<span>search for your roll number.</span></h1> 
-	<h3>You can bookmark this link for future use</h3> 
+	<h1>timetable.<span><a href="../edit/senior.php">Edit Electives</a></span></h1>
 </header>
 <div class="cd-schedule loading">
 	<div class="timeline">

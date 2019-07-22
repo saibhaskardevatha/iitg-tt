@@ -32,13 +32,13 @@ Main Components
 
 -------------------------------- */
 .codrops-header {
-	padding: 3em 190px 4em;
+	padding: 1em 190px 1em;
 	letter-spacing: -1px;
 }
 
 .codrops-header h1 {
 	font-weight: 800;
-	font-size: 4em;
+	font-size: 2em;
 	line-height: 1;
 	margin: 0.25em 0 0;
 }
@@ -47,7 +47,7 @@ Main Components
 	display: block;
 	font-size: 50%;
 	font-weight: 400;
-	padding: 0.325em 0 1em 0;
+	padding: 0.325em 0 0 0;
 	color: #c3c8cd;
 }
 
