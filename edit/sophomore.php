@@ -45,7 +45,7 @@ if(!isset($_SESSION['roll'])){
 					<select class="cs-select cs-skin-overlay" required name="hss">
 						<option value="" disabled selected>Select your HSS Elective</option>
 						<?php						
-							$sql = "SELECT * FROM courses_senior where type = 'hss'";
+							$sql = "SELECT * FROM courses_sophomore where type = 'hss'";
 							$result = mysqli_query($conn, $sql);	
 							$count = mysqli_num_rows($result);
 							$half = round($count/2);
