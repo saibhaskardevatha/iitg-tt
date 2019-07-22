@@ -12,11 +12,6 @@
     <meta name="description" content="A simple utility for all years of ECE/EEE students." />
     <meta name="keywords" content="iitg, guwahati, iit, timetable, academic, calendar, ece, eee" />
     <meta name="author" content="Sai Bhaskar Devatha" />
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="../assets/fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="../assets/css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="../assets/css/set2.css" />
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
