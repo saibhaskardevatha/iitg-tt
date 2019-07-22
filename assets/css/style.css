@@ -23,7 +23,7 @@ body {
 
 a {
   color: #A2B9B2;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* -------------------------------- 
@@ -31,54 +31,17 @@ a {
 Main Components 
 
 -------------------------------- */
-.codrops-header {
-	padding: 1em 190px 1em;
-	letter-spacing: -1px;
-}
-
-.codrops-header h1 {
-  text-align:center;
-	font-weight: 800;
-	font-size: 3em;
-	line-height: 1;
-	margin: 0.25em 0 0;
-}
-
-.codrops-header h1 span {
-  text-align:center;
-	display: block;
-	font-size: 50%;
-	font-weight: 400;
-	padding: 0.325em 0 0 0;
-	color: #c3c8cd;
-}
-
-.codrops-header h1 span a {
-  color: #A2B9B2;
-  text-decoration: underline;
-}
-
-@media only screen and (min-width:1000px){
-  .codrops-header h1{
-    font-size:3rem;
-    padding:1em 5% .5em;
-  }
-  .codrops-header h1 span{
-    font-size:2rem;
-  }
-}
-
 .cd-intro h1{
   text-align:center;
   padding:2.6em 5% .8em;
-  font-weight:700;
-  font-size:3rem;
+  font-weight:800;
+  font-size:4rem;
   letter-spacing: -1px;
 }
 
 .cd-intro h3{
   text-align:center;
-  font-size:1.5rem;
+  font-size:2rem;
   letter-spacing: -1px;
 }
 @media only screen and (min-width:1000px){
