@@ -7,7 +7,7 @@
     $time_explode = explode('|', $time_old);
     $time1 = $time_explode[0];
     $time2 = $time_explode[1];
-    $event_id = 'event-3';
+    $event_id = $_POST['event_id'];
 
     include("../../helpers/config.php");
     // Create connection
