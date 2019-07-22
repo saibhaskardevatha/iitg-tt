@@ -32,7 +32,7 @@
 					<input id="rollSub" type="submit" hidden value="submit">
 				</form>
 				
-				<p>developed by </p>
+				<p>developed by</p>
 				<h4><a href="https://www.facebook.com/saibhaskar.devatha" target="_blank">sai bhaskar devatha.</a></h4>
 			</section>
 		</div><!-- /container -->
