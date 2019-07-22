@@ -18,7 +18,7 @@
     } 
 
     $sql1 = "INSERT INTO courses_fresher (id, name, venue, event_id)
-    VALUES ($id', '$name', '$venue', '$event_id')";
+    VALUES ('$id', '$name', '$venue', '$event_id')";
 
     $sql2 = "INSERT INTO {$day} (id, start_time, end_time)
     VALUES ('$id', '$time1', '$time2')";
