@@ -33,17 +33,17 @@
         die("Connection failed: " . $conn->connect_error);
     } 
 
-    $sql1 = "INSERT INTO courses_sophomore (type, id, name)
-    VALUES ('$type', '$id', '$name')";
+    $sql1 = "INSERT INTO courses_sophomore (type, id, name, venue, event_id)
+    VALUES ('$type', '$id', '$name', '$venue', '$event_id')";
 
-    $sql2 = "INSERT INTO {$day1} (id, name, start_time, end_time, venue, event_id)
-    VALUES ('$id', '$name', '$time1', '$time4', '$venue', '$event_id')";
+    $sql2 = "INSERT INTO {$day1} (id, name, start_time, end_time)
+    VALUES ('$id', '$name', '$time1', '$time4')";
 
-    $sql3 = "INSERT INTO {$day2} (id, name, start_time, end_time, venue, event_id)
-    VALUES ('$id', '$name', '$time2', '$time5', '$venue', '$event_id')";
+    $sql3 = "INSERT INTO {$day2} (id, name, start_time, end_time)
+    VALUES ('$id', '$name', '$time2', '$time5')";
 
-    $sql4 = "INSERT INTO {$day3} (id, name, start_time, end_time, venue, event_id)
-    VALUES ('$id', '$name', '$time3', '$time6', '$venue', '$event_id')";
+    $sql4 = "INSERT INTO {$day3} (id, name, start_time, end_time)
+    VALUES ('$id', '$name', '$time3', '$time6')";
 
     if ($conn->query($sql1) === TRUE && $conn->query($sql2) === TRUE && $conn->query($sql3) === TRUE && $conn->query($sql4) === TRUE) {
         echo '<script type="text/javascript">
