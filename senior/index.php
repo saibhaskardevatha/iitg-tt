@@ -6,9 +6,20 @@
 	<link rel="shortcut icon" href="../assets/favicon.png" type="image/png"/>
 
 	<link rel="stylesheet" href="../assets/css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="../assets/css/style.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="../assets/css/style.css"> <!-- Resource style -->
 
-	<title>Timetable</title>
+    <title>timetable.</title>
+    <meta name="description" content="A simple utility for all years of ECE/EEE students." />
+    <meta name="keywords" content="iitg, guwahati, iit, timetable, academic, calendar, ece, eee" />
+    <meta name="author" content="Sai Bhaskar Devatha" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/set2.css" />
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 <body>
 <?php
@@ -56,10 +67,11 @@ if($branch == 'eee'){
 }
 
 ?>
-<header class="cd-intro">
-	<h1>8th Sem Timetable</h1> 
-	<h3>You can bookmark this link for future use</h3> 
-</header>
+<div class="container">
+    <header class="codrops-header">
+        <h1>timetable.<span>search for your roll number.</span></h1>
+    </header>
+</div>
 <div class="cd-schedule loading">
 	<div class="timeline">
 		<ul>
