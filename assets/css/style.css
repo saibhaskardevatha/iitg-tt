@@ -18,7 +18,7 @@ body {
   font-size: 1.6rem;
   font-family: "Source Sans Pro", sans-serif;
   color: #222222;
-  background-color: white;
+  background-color: #f9f7f6;
 }
 
 a {
@@ -31,6 +31,26 @@ a {
 Main Components 
 
 -------------------------------- */
+.codrops-header {
+	padding: 3em 190px 4em;
+	letter-spacing: -1px;
+}
+
+.codrops-header h1 {
+	font-weight: 800;
+	font-size: 4em;
+	line-height: 1;
+	margin: 0.25em 0 0;
+}
+
+.codrops-header h1 span {
+	display: block;
+	font-size: 50%;
+	font-weight: 400;
+	padding: 0.325em 0 1em 0;
+	color: #c3c8cd;
+}
+
 .cd-intro h1{
   text-align:center;
   padding:2.6em 5% .8em;

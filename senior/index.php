@@ -62,11 +62,10 @@ if($branch == 'eee'){
 }
 
 ?>
-<div class="container">
-    <header class="codrops-header">
-        <h1>timetable.<span>search for your roll number.</span></h1>
-    </header>
-</div>
+<header class="cd-intro">
+	<h1>8th Sem Timetable</h1> 
+	<h3>You can bookmark this link for future use</h3> 
+</header>
 <div class="cd-schedule loading">
 	<div class="timeline">
 		<ul>
