@@ -51,11 +51,11 @@
                                 <div class="4u 12u">
                                     <div class="select-wrapper">
                                         <select name="day2" id="day2">
-                                            <option value="monday">Monday</option>
-                                            <option value="tuesday">Tuesday</option>
-                                            <option value="wednesday">Wednesday</option>
-                                            <option value="thursday">Thursday</option>
-                                            <option value="friday">Friday</option>
+                                            <option value="monday_fresher">Monday</option>
+                                            <option value="tuesday_fresher">Tuesday</option>
+                                            <option value="wednesday_fresher">Wednesday</option>
+                                            <option value="thursday_fresher">Thursday</option>
+                                            <option value="friday_fresher">Friday</option>
                                         </select>
                                     </div><br>
                                     <div class="select-wrapper">
@@ -76,11 +76,11 @@
                                 <div class="4u$ 12u$">
                                     <div class="select-wrapper">
                                         <select name="day3" id="day3">
-                                            <option value="monday">Monday</option>
-                                            <option value="tuesday">Tuesday</option>
-                                            <option value="wednesday">Wednesday</option>
-                                            <option value="thursday">Thursday</option>
-                                            <option value="friday">Friday</option>
+                                            <option value="monday_fresher">Monday</option>
+                                            <option value="tuesday_fresher">Tuesday</option>
+                                            <option value="wednesday_fresher">Wednesday</option>
+                                            <option value="thursday_fresher">Thursday</option>
+                                            <option value="friday_fresher">Friday</option>
                                         </select>
                                     </div><br>
                                     <div class="select-wrapper">
@@ -110,7 +110,7 @@
                         </form>
                         <div class="3u$ 12u(large)"></div>
                     </div>
-
+                    <div class="inner">
                     <div class="row uniform">
                         <div class="3u 12u(large)"></div>
                         <div class="6u 12u(large)">
@@ -149,7 +149,7 @@
                         </form>
                         <div class="3u$ 12u(large)"></div>
                     </div>
-				</div>
+				</div></div>
 
 			</section>
 
