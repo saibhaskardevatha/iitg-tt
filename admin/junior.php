@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Admin Senior</title>
+		<title>Admin Junior</title>
 		<meta charset="utf-8" />
         <link rel="shortcut icon" href="../assets/favicon.png" type="image/png"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,7 +18,7 @@
                     <div class="row uniform">
                         <div class="3u 12u(large)"></div>
                         <div class="6u 12u(large)">
-                            <form method="post" action="helpers/senior.php">
+                            <form method="post" action="helpers/junior.php">
                                 <div class="select-wrapper">
                                     <select name="type" id="type">
                                         <option value="dep">Compulsory course</option>
