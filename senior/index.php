@@ -64,7 +64,11 @@ if($branch == 'eee'){
 ?>
 <header class="cd-intro">
     <h1>timetable.</h1>
-    <h3><a href="../edit/senior.php">Edit Electives</a></h3>
+    <h3>
+        <a href="../">Home</a>
+        <a href="../edit/senior.php">Edit Electives</a>
+        <a href="https://www.facebook.com/saibhaskar.devatha">Developer</a>
+    </h3>
 </header>
 <div class="cd-schedule loading">
 	<div class="timeline">
