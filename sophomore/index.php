@@ -73,7 +73,7 @@ if($roll < 180102045){
     <h3>
         <a href="../">Home</a>
         <a href="../edit/sophomore.php">Edit Electives</a>
-        <a href="https://www.facebook.com/saibhaskar.devatha">Developer</a>
+        <a href="https://www.facebook.com/saibhaskar.devatha" target='_blank'>Developer</a>
     </h3>
 </header>
 <div class="cd-schedule loading">
