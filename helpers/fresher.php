@@ -1,16 +1,15 @@
 <?php
     session_start();
     $roll = $_SESSION['roll'];
-    $branch = $roll[4].$roll[5];
 
-    if($branch == '03' || $branch == '04'){
-        $div = '1';
-    }else if($branch == '02' || $branch == '06' || $branch = '08'){
-        $div = '2';
-    }else if($branch == '01' || $branch == '05' || $branch = '23'){
+    if(($roll>=1901010001 && $roll<=190101101) || ($roll>=190123001 && $roll<=190123064) || ($roll>=190205001 && $roll<=190205056)){
         $div = '3';
-    }else if($branch == '07' || $branch == '21' || $branch = '22'){
+    }else if(($roll>=190107001 && $roll<=190107084) || ($roll>=190121001 && $roll<=190121060) || ($roll>=190122001 && $roll<=190122057)){
         $div = '4';
+    }else if(($roll>=190103001 && $roll<=190104101)){
+        $div = '1';
+    }else if(($roll>=190102001 && $roll<=190102092) || ($roll>=190108001 && $roll<=190108057)  || ($roll>=190106001 && $roll<=190106075)){
+        $div = '2';
     }
 
     $_SESSION['div'] = $div;
