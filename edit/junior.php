@@ -13,7 +13,7 @@ if(!isset($_SESSION['roll'])){
 		<title>junior edit.</title>
 		<meta name="keywords" content="iitg, guwahati, iit, timetable, academic, calendar, ece, eee" />
 		<meta name="author" content="Sai Bhaskar Devatha" />
-		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="shortcut icon" href="../assets/favicon.png" type="image/png"/>
 		<link rel="stylesheet" type="text/css" href="../assets/css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="../assets/fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="../assets/css/demo.css" />
