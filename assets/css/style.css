@@ -40,15 +40,16 @@ Main Components
 }
 
 .cd-intro h3{
+  font-weight:300;
   text-align:center;
-  font-size:1.5em;
+  font-size:1em;
   letter-spacing: -1px;
 }
 
 .cd-intro h3 a{
   display: inline-block;
   text-decoration: underline;
-  padding-inline: 1em;
+  padding-inline: 3em;
 }
 @media only screen and (max-width:775px){
   .cd-intro h3 a{
