@@ -19,17 +19,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     
     switch($year){
         case '8':
-            $sql = "SELECT * from roll_data_sophomore where roll = $roll";
-            $result = mysqli_query($conn, $sql);
-            $result = mysqli_fetch_assoc($result);
-
-            if(empty($result)){
-                header('Location: ../edit/sophomore.php'); 
-            }else{
-                header('Location: ../sophomore/');
-            }
-            mysqli_close($conn);
-            break;
+            header('Location: ../sophomore/');
+            break;  
         case '7':
             $sql = "SELECT * from roll_data_junior where roll = $roll";
             $result = mysqli_query($conn, $sql);

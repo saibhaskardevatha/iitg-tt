@@ -37,34 +37,47 @@ if(empty($roll)){
     </script>';
 }
 
-$sql = "SELECT * from roll_data_sophomore where roll = $roll";
-
-$result = mysqli_query($conn, $sql);
-$result = mysqli_fetch_assoc($result);
-
-if(empty($result)){
-	echo '<script type="text/javascript">
-           window.location = "../"
-    </script>';
-}
-
-$hss = $result['hss'];
-$course1 = 'ee200';
-$course2 = 'ee201';
-$course3 = 'ee220';
-
+$course1 = 'ee203';
 if($roll < 180102100){
-    $course4 = 'ma201a';
+    $course2 = 'ee204';
 }else{
-    $course4 = 'ma201b';
+    $course2 = 'ee205';
+}
+$course3 = 'ee210';
+$course4 = 'ee220';
+$course5 = 'ma201';
+
+if($roll < 180102045){
+    $tut1 = 'ee220ta';
+}else if($roll < 180108010){
+    $tut1 = 'ee220tb';
+}else if($roll < 180108070) {
+    $tut1 = 'ee220tc';
 }
 
 if($roll < 180102045){
-    $lab = 'ee202a';
+    $tut3 = 'ma201ta';
 }else if($roll < 180108010){
-    $lab = 'ee202b';
-}else if($roll < 180108050) {
-    $lab = 'ee202c';
+    $tut3 = 'ma201tb';
+}else if($roll < 180108070) {
+    $tut3 = 'ma201tc';
+}
+
+if($roll < 180102045){
+    $tut2 = 'ee204ta';
+}else if($roll < 180102100){
+    $tut2 = 'ee204tb';
+}else if($roll < 180108070) {
+    $tut2 = 'ee205t';
+}
+
+
+if($roll < 180102045){
+    $lab = 'ee211a';
+}else if($roll < 180108010){
+    $lab = 'ee211b';
+}else if($roll < 180108070) {
+    $lab = 'ee211c';
 }
 
 ?>
@@ -72,7 +85,6 @@ if($roll < 180102045){
     <h1>timetable.</h1>
     <h3>
         <a href="../">Home</a>
-        <a href="../edit/sophomore.php">Edit Electives</a>
         <a href="https://www.facebook.com/saibhaskar.devatha" target='_blank'>Developer</a>
     </h3>
 </header>
@@ -108,7 +120,7 @@ if($roll < 180102045){
 
 				<ul>
 					<?php						
-						$sql = "SELECT a.id, a.name, a.start_time, a.end_time, b.venue, b.event_id FROM monday a INNER JOIN courses_sophomore b ON a.id = b.id WHERE a.id = '$hss' OR a.id = '$course1' OR a.id = '$course2' OR a.id = '$course3' OR a.id='$course4' OR a.id = '$lab' ORDER BY start_time";
+						$sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM monday a INNER JOIN courses_sophomore b ON a.id = b.id WHERE a.id = '$course1' OR a.id = '$course2' OR a.id = '$course3' OR a.id='$course4' OR a.id = '$course5' OR a.id = '$tut1' OR a.id = '$tut2' OR a.id = '$tut3' OR a.id = '$lab' ORDER BY start_time";
 						$result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {
@@ -132,8 +144,7 @@ if($roll < 180102045){
 
 				<ul>
 				<?php
-
-                        $sql = "SELECT a.id, a.name, a.start_time, a.end_time, b.venue, b.event_id FROM tuesday a INNER JOIN courses_sophomore b ON a.id = b.id WHERE a.id = '$hss' OR a.id = '$course1' OR a.id = '$course2' OR a.id = '$course3' OR a.id='$course4' OR a.id = '$lab' ORDER BY start_time";						
+						$sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM tuesday a INNER JOIN courses_sophomore b ON a.id = b.id WHERE a.id = '$course1' OR a.id = '$course2' OR a.id = '$course3' OR a.id='$course4' OR a.id = '$course5' OR a.id = '$tut1' OR a.id = '$tut2' OR a.id = '$tut3' OR a.id = '$lab' ORDER BY start_time";
                         $result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {
@@ -156,7 +167,7 @@ if($roll < 180102045){
 
 				<ul>
 				<?php
-                        $sql = "SELECT a.id, a.name, a.start_time, a.end_time, b.venue, b.event_id FROM wednesday a INNER JOIN courses_sophomore b ON a.id = b.id WHERE a.id = '$hss' OR a.id = '$course1' OR a.id = '$course2' OR a.id = '$course3' OR a.id='$course4' OR a.id = '$lab' ORDER BY start_time";						
+						$sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM wednesday a INNER JOIN courses_sophomore b ON a.id = b.id WHERE a.id = '$course1' OR a.id = '$course2' OR a.id = '$course3' OR a.id='$course4' OR a.id = '$course5' OR a.id = '$tut1' OR a.id = '$tut2' OR a.id = '$tut3' OR a.id = '$lab' ORDER BY start_time";
 						$result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {
@@ -179,7 +190,7 @@ if($roll < 180102045){
 
 				<ul>
 				<?php
-                    $sql = "SELECT a.id, a.name, a.start_time, a.end_time, b.venue, b.event_id FROM thursday a INNER JOIN courses_sophomore b ON a.id = b.id WHERE a.id = '$hss' OR a.id = '$course1' OR a.id = '$course2' OR a.id = '$course3' OR a.id='$course4' OR a.id = '$lab' ORDER BY start_time";
+					$sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM thursday a INNER JOIN courses_sophomore b ON a.id = b.id WHERE a.id = '$course1' OR a.id = '$course2' OR a.id = '$course3' OR a.id='$course4' OR a.id = '$course5' OR a.id = '$tut1' OR a.id = '$tut2' OR a.id = '$tut3' OR a.id = '$lab' ORDER BY start_time";
                     $result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {
@@ -202,7 +213,7 @@ if($roll < 180102045){
 
 				<ul>
 				<?php
-                        $sql = "SELECT a.id, a.name, a.start_time, a.end_time, b.venue, b.event_id FROM friday a INNER JOIN courses_sophomore b ON a.id = b.id WHERE a.id = '$hss' OR a.id = '$course1' OR a.id = '$course2' OR a.id = '$course3' OR a.id='$course4' OR a.id = '$lab' ORDER BY start_time";
+					$sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM friday a INNER JOIN courses_sophomore b ON a.id = b.id WHERE a.id = '$course1' OR a.id = '$course2' OR a.id = '$course3' OR a.id='$course4' OR a.id = '$course5' OR a.id = '$tut1' OR a.id = '$tut2' OR a.id = '$tut3' OR a.id = '$lab' ORDER BY start_time";
 						$result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {
