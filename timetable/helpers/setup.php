@@ -16,6 +16,19 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
     }
+
+    $sql2 = "SELECT * from roll_count where roll = $roll";
+    $result = mysqli_query($conn, $sql2);
+    $result = mysqli_fetch_assoc($result);
+
+    if(empty($result)){
+        $sql3 = "INSERT INTO roll_count (roll, count) VALUES ($roll, 1)";
+        $conn->query($sql1);
+    }else{
+        $count = $result['count']+1;
+        $sql3 = "INSERT INTO roll_count (roll, count) VALUES ($roll, $count)";
+        $conn->query($sql1);
+    }
     
     switch($year){
         case '8':
