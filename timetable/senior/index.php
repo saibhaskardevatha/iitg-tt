@@ -62,12 +62,18 @@ $de2 = $result['de2'];
 $branch = $result['branch'];
 $oe = $result['oe'];
 
-if($branch == 'eee'){
-    $course = ee480;
-    $lab = ee482;
+if($roll < 160102045){
+	$course = 'ee441';
+    $lab = 'ee442a';
+}else if($roll < 160108000){
+	$course = 'ee441';
+    $lab = 'ee442b';
+}else if($roll < 160108030) {
+	$course = 'ee480';
+    $lab = 'ee482a';
 }else{
-    $course = ee441;
-    $lab = ee442;
+	$course = 'ee480';
+    $lab = 'ee482b';
 }
 
 ?>
