@@ -20,9 +20,11 @@
                         <div class="6u 12u(large)">
                             <form method="post" action="helpers/sophomore.php">
                                 <div class="select-wrapper">
-                                    <select name="type" id="type">
-                                        <option value="dep">Compulsory Course</option>
-                                        <option value="hss">HSS</option>
+                                <select name="event_id" id="event_id">
+                                        <option value="event-1">Event 1</option>
+                                        <option value="event-2">Event 2</option>
+                                        <option value="event-3">Event 3</option>
+                                        <option value="event-4">Event 4</option>
                                     </select>
                                 </div><br>
                                 <input type="text" name="id" id="id" placeholder="Course ID (Small Letters and without spaces)" /><br>

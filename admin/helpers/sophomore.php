@@ -18,12 +18,7 @@
     $time4 = $time1_explode[1];
     $time5 = $time2_explode[1];
     $time6 = $time3_explode[1];
-
-    if($type == 'dep'){
-        $event_id = 'event-1';
-    }else if($type == 'hss'){
-        $event_id = 'event-2';
-    }
+    $event_id = $_POST['event_id'];
 
     include("../../helpers/config.php");
     // Create connection
