@@ -17,7 +17,7 @@
         die("Connection failed: " . $conn->connect_error);
     } 
 
-    $sql1 = "INSERT INTO courses_fresher (id, name, venue, event_id)
+    $sql1 = "INSERT INTO courses_junior (id, name, venue, event_id)
     VALUES ('$id', '$name', '$venue', '$event_id')";
 
     $sql2 = "INSERT INTO {$day} (id, start_time, end_time)

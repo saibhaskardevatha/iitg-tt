@@ -102,7 +102,7 @@ if($branch == 'eee'){
 
 				<ul>
 					<?php						
-						$sql = "SELECT a.id, a.name, a.start_time, a.end_time, b.venue, b.event_id FROM monday a INNER JOIN courses_senior b ON a.id = b.id WHERE a.id = '$de1' OR a.id = '$de2' OR a.id = '$course' OR a.id = '$oe' OR a.id = '$lab' ORDER BY start_time";
+						$sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM monday a INNER JOIN courses_senior b ON a.id = b.id WHERE a.id = '$de1' OR a.id = '$de2' OR a.id = '$course' OR a.id = '$oe' OR a.id = '$lab' ORDER BY start_time";
 						$result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {
@@ -127,7 +127,7 @@ if($branch == 'eee'){
 				<ul>
 				<?php
 
-                        $sql = "SELECT a.id, a.name, a.start_time, a.end_time, b.venue, b.event_id FROM tuesday a INNER JOIN courses_senior b ON a.id = b.id WHERE a.id = '$de1' OR a.id = '$de2' OR a.id = '$course' OR a.id = '$oe' OR a.id = '$lab' ORDER BY start_time";						
+                        $sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM tuesday a INNER JOIN courses_senior b ON a.id = b.id WHERE a.id = '$de1' OR a.id = '$de2' OR a.id = '$course' OR a.id = '$oe' OR a.id = '$lab' ORDER BY start_time";						
                         $result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {
@@ -150,7 +150,7 @@ if($branch == 'eee'){
 
 				<ul>
 				<?php
-                        $sql = "SELECT a.id, a.name, a.start_time, a.end_time, b.venue, b.event_id FROM wednesday a INNER JOIN courses_senior b ON a.id = b.id WHERE a.id = '$de1' OR a.id = '$de2' OR a.id = '$course' OR a.id = '$oe' OR a.id = '$lab' ORDER BY start_time";						
+                        $sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM wednesday a INNER JOIN courses_senior b ON a.id = b.id WHERE a.id = '$de1' OR a.id = '$de2' OR a.id = '$course' OR a.id = '$oe' OR a.id = '$lab' ORDER BY start_time";						
 						$result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {
@@ -173,7 +173,7 @@ if($branch == 'eee'){
 
 				<ul>
 				<?php
-                    $sql = "SELECT a.id, a.name, a.start_time, a.end_time, b.venue, b.event_id FROM thursday a INNER JOIN courses_senior b ON a.id = b.id WHERE a.id = '$de1' OR a.id = '$de2' OR a.id = '$course' OR a.id = '$oe' OR a.id = '$lab' ORDER BY start_time";
+                    $sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM thursday a INNER JOIN courses_senior b ON a.id = b.id WHERE a.id = '$de1' OR a.id = '$de2' OR a.id = '$course' OR a.id = '$oe' OR a.id = '$lab' ORDER BY start_time";
                     $result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {
@@ -196,7 +196,7 @@ if($branch == 'eee'){
 
 				<ul>
 				<?php
-                        $sql = "SELECT a.id, a.name, a.start_time, a.end_time, b.venue, b.event_id FROM friday a INNER JOIN courses_senior b ON a.id = b.id WHERE a.id = '$de1' OR a.id = '$de2' OR a.id = '$course' OR a.id = '$oe' OR a.id = '$lab' ORDER BY start_time";
+                        $sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM friday a INNER JOIN courses_senior b ON a.id = b.id WHERE a.id = '$de1' OR a.id = '$de2' OR a.id = '$course' OR a.id = '$oe' OR a.id = '$lab' ORDER BY start_time";
 						$result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {
