@@ -9,12 +9,21 @@
     <link rel="stylesheet" href="../assets/css/style.css"> <!-- Resource style -->
 
     <title>timetable.</title>
-    <meta name="description" content="A simple utility for all years of ECE/EEE students." />
     <meta name="keywords" content="iitg, guwahati, iit, timetable, academic, calendar, ece, eee" />
     <meta name="author" content="Sai Bhaskar Devatha" />
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+	<![endif]-->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109652681-3"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-109652681-3');
+	</script>
+
 </head>
 <body>
 <?php
@@ -37,28 +46,51 @@ if(empty($roll)){
     </script>';
 }
 
-$sql = "SELECT * from roll_data_senior where roll = $roll";
+$course1 = 'ee203';
+if($roll < 180102100){
+    $course2 = 'ee204';
+}else{
+    $course2 = 'ee205';
+}
+$course3 = 'ee210';
+$course4 = 'ee220';
+$course5 = 'ma201';
 
-$result = mysqli_query($conn, $sql);
-$result = mysqli_fetch_assoc($result);
-
-if(empty($result)){
-	echo '<script type="text/javascript">
-           window.location = "../"
-    </script>';
+if($roll <= 180102051){
+    $tut1 = 'ee220ta';
+}else if($roll <= 180108004){
+    $tut1 = 'ee220tb';
+}else if($roll <= 180108058) {
+    $tut1 = 'ee220tc';
 }
 
-$de1 = $result['de1'];
-$de2 = $result['de2'];
-$branch = $result['branch'];
-$oe = $result['oe'];
+if($roll < 180102045){
+    $tut3 = 'ma201ta';
+}else if($roll <= 180102088){
+    $tut3 = 'ma201tb';
+}else if($roll <= 180102096) {
+    $tut3 = 'ma201tc';
+}else if($roll <= 180108040) {
+    $tut3 = 'ma201td';
+}else if($roll <= 180108058) {
+    $tut3 = 'ma201te';
+}
 
-if($branch == 'eee'){
-    $course = ee480;
-    $lab = ee482;
-}else{
-    $course = ee441;
-    $lab = ee442;
+if($roll < 180102049){
+    $tut2 = 'ee204ta';
+}else if($roll < 180102100){
+    $tut2 = 'ee204tb';
+}else if($roll < 180108070) {
+    $tut2 = 'ee205t';
+}
+
+
+if($roll <= 180102051){
+    $lab = 'ee211a';
+}else if($roll <= 180108004){
+    $lab = 'ee211b';
+}else if($roll <= 180108058) {
+    $lab = 'ee211c';
 }
 
 ?>
@@ -66,7 +98,6 @@ if($branch == 'eee'){
     <h1>timetable.</h1>
     <h3>
         <a href="../">Home</a>
-        <a href="../edit/senior.php">Edit Electives</a>
         <a href="https://www.facebook.com/saibhaskar.devatha" target='_blank'>Developer</a>
     </h3>
 </header>
@@ -102,7 +133,7 @@ if($branch == 'eee'){
 
 				<ul>
 					<?php						
-						$sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM monday a INNER JOIN courses_senior b ON a.id = b.id WHERE a.id = '$de1' OR a.id = '$de2' OR a.id = '$course' OR a.id = '$oe' OR a.id = '$lab' ORDER BY start_time";
+						$sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM monday a INNER JOIN courses_sophomore b ON a.id = b.id WHERE a.id = '$course1' OR a.id = '$course2' OR a.id = '$course3' OR a.id='$course4' OR a.id = '$course5' OR a.id = '$tut1' OR a.id = '$tut2' OR a.id = '$tut3' OR a.id = '$lab' ORDER BY start_time";
 						$result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {
@@ -126,8 +157,7 @@ if($branch == 'eee'){
 
 				<ul>
 				<?php
-
-                        $sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM tuesday a INNER JOIN courses_senior b ON a.id = b.id WHERE a.id = '$de1' OR a.id = '$de2' OR a.id = '$course' OR a.id = '$oe' OR a.id = '$lab' ORDER BY start_time";						
+						$sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM tuesday a INNER JOIN courses_sophomore b ON a.id = b.id WHERE a.id = '$course1' OR a.id = '$course2' OR a.id = '$course3' OR a.id='$course4' OR a.id = '$course5' OR a.id = '$tut1' OR a.id = '$tut2' OR a.id = '$tut3' OR a.id = '$lab' ORDER BY start_time";
                         $result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {
@@ -150,7 +180,7 @@ if($branch == 'eee'){
 
 				<ul>
 				<?php
-                        $sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM wednesday a INNER JOIN courses_senior b ON a.id = b.id WHERE a.id = '$de1' OR a.id = '$de2' OR a.id = '$course' OR a.id = '$oe' OR a.id = '$lab' ORDER BY start_time";						
+						$sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM wednesday a INNER JOIN courses_sophomore b ON a.id = b.id WHERE a.id = '$course1' OR a.id = '$course2' OR a.id = '$course3' OR a.id='$course4' OR a.id = '$course5' OR a.id = '$tut1' OR a.id = '$tut2' OR a.id = '$tut3' OR a.id = '$lab' ORDER BY start_time";
 						$result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {
@@ -173,7 +203,7 @@ if($branch == 'eee'){
 
 				<ul>
 				<?php
-                    $sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM thursday a INNER JOIN courses_senior b ON a.id = b.id WHERE a.id = '$de1' OR a.id = '$de2' OR a.id = '$course' OR a.id = '$oe' OR a.id = '$lab' ORDER BY start_time";
+					$sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM thursday a INNER JOIN courses_sophomore b ON a.id = b.id WHERE a.id = '$course1' OR a.id = '$course2' OR a.id = '$course3' OR a.id='$course4' OR a.id = '$course5' OR a.id = '$tut1' OR a.id = '$tut2' OR a.id = '$tut3' OR a.id = '$lab' ORDER BY start_time";
                     $result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {
@@ -196,7 +226,7 @@ if($branch == 'eee'){
 
 				<ul>
 				<?php
-                        $sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM friday a INNER JOIN courses_senior b ON a.id = b.id WHERE a.id = '$de1' OR a.id = '$de2' OR a.id = '$course' OR a.id = '$oe' OR a.id = '$lab' ORDER BY start_time";
+					$sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM friday a INNER JOIN courses_sophomore b ON a.id = b.id WHERE a.id = '$course1' OR a.id = '$course2' OR a.id = '$course3' OR a.id='$course4' OR a.id = '$course5' OR a.id = '$tut1' OR a.id = '$tut2' OR a.id = '$tut3' OR a.id = '$lab' ORDER BY start_time";
 						$result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {

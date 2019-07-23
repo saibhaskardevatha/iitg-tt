@@ -9,9 +9,18 @@
     <link rel="stylesheet" href="../assets/css/style.css"> <!-- Resource style -->
 
     <title>timetable.</title>
-    <meta name="description" content="A simple utility for all years of ECE/EEE students." />
     <meta name="keywords" content="iitg, guwahati, iit, timetable, academic, calendar, ece, eee" />
-    <meta name="author" content="Sai Bhaskar Devatha" />
+	<meta name="author" content="Sai Bhaskar Devatha" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109652681-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109652681-3');
+</script>
+
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
