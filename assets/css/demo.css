@@ -134,9 +134,7 @@ body .nomargin-bottom {
 }
 
 .codrops-header h1 span a{
-	text-decoration: #404d5b;
-	text-decoration-line: underline;
-	text-decoration-style: dashed;
+	color: #ffc850;
 }
 
 /* Related demos */
