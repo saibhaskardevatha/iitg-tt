@@ -133,6 +133,12 @@ body .nomargin-bottom {
 	color: #c3c8cd;
 }
 
+.codrops-header h1 span a{
+	color: #c3c8cd;
+	text-decoration: #404d5b;
+	text-decoration-style: dotted;
+}
+
 /* Related demos */
 .content--related {
 	text-align: center;

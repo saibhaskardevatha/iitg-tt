@@ -19,14 +19,14 @@
 	<body class="bgcolor-1">
 		<div class="container">
 			<header class="codrops-header">
-				<h1>timetable.<span>from team cepstrum.</span></h1>
+				<h1>timetable.<span>from <a>team cepstrum.</a></span></h1>
 			</header>
 			<section class="content">
 				<form action="helpers/setup.php" method="POST">
 					<span class="input input--makiko">
 						<input class="input__field input__field--makiko" type="text" name="roll" id="roll" pattern="(\b1801020\w+|\b1801080\w+|\b1601020\w+|\b1601080\w+|\b1701020\w+|\b1701080\w+|\b19\w+)" maxlength="9" title="Must be a valid IITG roll number"/>
 						<label class="input__label input__label--makiko" for="roll">
-							<span class="input__label-content input__label-content--makiko">search.</span>
+							<span class="input__label-content input__label-content--makiko">search your roll number.</span>
 						</label>
 					</span>	
 					<input id="rollSub" type="submit" hidden value="submit">
