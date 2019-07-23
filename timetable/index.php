@@ -7,7 +7,7 @@
 		<title>timetable.</title>
 		<meta property="og:title" content="timetable." />
 		<meta property="og:url" content="http://www.cepstrum.in/timetable" />
-		<meta property="og:image" content="https://i.ibb.co/qkJwSxP/Capture1.jpg" />
+		<meta property="og:image" content="https://scontent.fhyd1-2.fna.fbcdn.net/v/t1.0-9/67492247_2328142683940511_5203606904944721920_n.jpg?_nc_cat=103&_nc_oc=AQkHTyZxF0Sib3NvAoqExO5WnmJvkm6smOVr3glP5zBP3-OJXRLHgtkuQusjz_DL37E&_nc_ht=scontent.fhyd1-2.fna&oh=e5a15bed72dd6d110dbceaf3941f2bc3&oe=5DA3D667" />
 		<meta name="author" content="Sai Bhaskar Devatha" />
 		<link rel="shortcut icon" href="assets/favicon.png" type="image/png"/>
 		<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
