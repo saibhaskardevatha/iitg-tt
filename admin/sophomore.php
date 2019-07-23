@@ -124,6 +124,9 @@
             
             <section id="main" class="wrapper" style="padding-top:1.5em;padding-bottom: 0">
             <div class="inner">
+            <header class="align-center">
+						<h2>Add Labs/ Tuts</h2>
+                    </header>
                     <div class="row uniform">
                         <div class="3u 12u(large)"></div>
                         <div class="6u 12u(large)">

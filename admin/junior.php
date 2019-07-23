@@ -118,7 +118,62 @@
                     </div>
 				</div>
 
-			</section>
+            </section>
+            
+            <section id="main" class="wrapper" style="padding-top:1.5em;padding-bottom: 0">
+            <div class="inner">
+            <header class="align-center">
+						<h2>Add Labs/Tutorials</h2>
+                    </header>
+                    <div class="row uniform">
+                        <div class="3u 12u(large)"></div>
+                        <div class="6u 12u(large)">
+                            <form method="post" action="helpers/junior_lab.php">
+                                <div class="select-wrapper">
+                                    <select name="event_id" id="event_id">
+                                        <option value="event-1">Event 1</option>
+                                        <option value="event-2">Event 2</option>
+                                        <option value="event-3">Event 3</option>
+                                        <option value="event-4">Event 4</option>
+                                    </select>
+                                </div><br>
+                                <input type="text" name="id" id="id" placeholder="Course ID (Small Letters and without spaces)" /><br>
+                                <input type="text" name="name" id="name" placeholder="Course Name (As Short as possible)" /><br>
+                                <input type="text" name="venue" id="venue" placeholder="Venue" /><br>
+                                <div class="row uniform">
+                                    <div class="4u 12u"></div>
+                                <div class="4u 12u">
+                                    <div class="select-wrapper">
+                                        <select name="lab_day" id="lab_day">
+                                            <option value="monday">Monday</option>
+                                            <option value="tuesday">Tuesday</option>
+                                            <option value="wednesday">Wednesday</option>
+                                            <option value="thursday">Thursday</option>
+                                            <option value="friday">Friday</option>
+                                        </select>
+                                    </div><br>
+                                    <div class="select-wrapper">
+                                        <select name="time" id="time">
+                                            <option value="08:00|09:00">Tut</option>
+                                            <option value="09:00|12:00">Morning</option>
+                                            <option value="14:00|17:00">Afternoon</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="4u$ 12u$"></div>                                    
+                                <div class="row uniform">
+                                    <div class="4u 12u(small)"></div>
+                                    <div class="4u 12u">
+                                        <input type="submit" value="Add Course"/>
+                                    </div>
+                                    <div class="4u$ 12u$"></div>
+                                </div>
+                            </form>
+                        </form>
+                        <div class="3u$ 12u(large)"></div>
+                    </div>
+				</div></div>
+            </section>
 
 		<!-- Scripts -->
 			<script src="../assets/js/jquery.min.js"></script>
