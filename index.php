@@ -19,7 +19,7 @@
 	<body class="bgcolor-1">
 		<div class="container">
 			<header class="codrops-header">
-				<h1>timetable.<span>search for your roll number.</span></h1>
+				<h1>timetable.<span>from team cepstrum.</span></h1>
 			</header>
 			<section class="content">
 				<form action="helpers/setup.php" method="POST">
@@ -30,9 +30,7 @@
 						</label>
 					</span>	
 					<input id="rollSub" type="submit" hidden value="submit">
-				</form>
-				<p>with <i class="fa fa-heart" style="font-size:18px;color:red"></i> from <a href="http://www.iitg.ac.in/scifac/cep/public_html/index.html" target="_blank">cepstrum.</a></p>
-				
+				</form>				
 				<p>developed by</p>
 				<h4><a href="https://www.facebook.com/saibhaskar.devatha" target="_blank">sai bhaskar devatha.</a></h4>
 			</section>
