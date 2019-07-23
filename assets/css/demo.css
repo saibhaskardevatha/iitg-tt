@@ -179,4 +179,7 @@ body .nomargin-bottom {
 	.codrops-header h1 {
 		font-size: 2.8em;
 	}
+	.codrops-header h1 span a{
+		color: #ffc850;
+	}
 }
