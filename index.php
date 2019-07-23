@@ -19,7 +19,7 @@
 	<body class="bgcolor-1">
 		<div class="container">
 			<header class="codrops-header">
-				<h1>timetable.<span>from <a>team cepstrum.</a></span></h1>
+				<h1>timetable.<span>from <a href="http://www.iitg.ac.in/scifac/cep/public_html/team.html">team cepstrum.</a></span></h1>
 			</header>
 			<section class="content">
 				<form action="helpers/setup.php" method="POST">
