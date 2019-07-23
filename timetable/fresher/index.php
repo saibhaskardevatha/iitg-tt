@@ -52,6 +52,11 @@ $ma101 = 'ma101_'.$_SESSION['div'];
 $ch101 = 'ch101_'.$_SESSION['div'];
 $ph101 = 'ph101_'.$_SESSION['div'];
 
+$ee101t = 'ee101t_'.$_SESSION['tut'];
+$ma101t = 'ma101t_'.$_SESSION['tut'];
+$ch101t = 'ch101t_'.$_SESSION['tut'];
+$ph101t = 'ph101t_'.$_SESSION['tut'];
+
 $lab1 = 'ch110_'.$_SESSION['lab'];
 $lab2 = 'ce110_'.$_SESSION['lab'];
 $lab3 = 'ph110_'.$_SESSION['lab'];
@@ -98,7 +103,7 @@ $lab4 = 'me110_'.$_SESSION['lab'];
 
 				<ul>
 					<?php						
-						$sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM monday_fresher a INNER JOIN courses_fresher b ON a.id = b.id WHERE a.id = '$ee101' OR a.id = '$ce101' OR a.id = '$ma101' OR a.id = '$ph101' OR a.id='$ch101' OR a.id = '$lab1' OR a.id = '$lab2' OR a.id = '$lab3' OR a.id = '$lab4' ORDER BY start_time";
+						$sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM monday_fresher a INNER JOIN courses_fresher b ON a.id = b.id WHERE a.id = '$ee101t' OR a.id = '$ch101t' OR a.id = '$ma101t' OR a.id = '$ph101t' OR a.id = '$ee101' OR a.id = '$ce101' OR a.id = '$ma101' OR a.id = '$ph101' OR a.id='$ch101' OR a.id = '$lab1' OR a.id = '$lab2' OR a.id = '$lab3' OR a.id = '$lab4' ORDER BY start_time";
 						$result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {
@@ -123,7 +128,7 @@ $lab4 = 'me110_'.$_SESSION['lab'];
 				<ul>
 				<?php
 
-						$sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM tuesday_fresher a INNER JOIN courses_fresher b ON a.id = b.id WHERE a.id = '$ee101' OR a.id = '$ce101' OR a.id = '$ma101' OR a.id = '$ph101' OR a.id='$ch101' OR a.id = '$lab1' OR a.id = '$lab2' OR a.id = '$lab3' OR a.id = '$lab4' ORDER BY start_time";
+						$sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM tuesday_fresher a INNER JOIN courses_fresher b ON a.id = b.id WHERE a.id = '$ee101t' OR a.id = '$ch101t' OR a.id = '$ma101t' OR a.id = '$ph101t' OR a.id = '$ee101' OR a.id = '$ce101' OR a.id = '$ma101' OR a.id = '$ph101' OR a.id='$ch101' OR a.id = '$lab1' OR a.id = '$lab2' OR a.id = '$lab3' OR a.id = '$lab4' ORDER BY start_time";
                         $result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {
@@ -146,7 +151,7 @@ $lab4 = 'me110_'.$_SESSION['lab'];
 
 				<ul>
 				<?php
-						$sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM wednesday_fresher a INNER JOIN courses_fresher b ON a.id = b.id WHERE a.id = '$ee101' OR a.id = '$ce101' OR a.id = '$ma101' OR a.id = '$ph101' OR a.id='$ch101' OR a.id = '$lab1' OR a.id = '$lab2' OR a.id = '$lab3' OR a.id = '$lab4' ORDER BY start_time";
+						$sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM wednesday_fresher a INNER JOIN courses_fresher b ON a.id = b.id WHERE a.id = '$ee101t' OR a.id = '$ch101t' OR a.id = '$ma101t' OR a.id = '$ph101t' OR a.id = '$ee101' OR a.id = '$ce101' OR a.id = '$ma101' OR a.id = '$ph101' OR a.id='$ch101' OR a.id = '$lab1' OR a.id = '$lab2' OR a.id = '$lab3' OR a.id = '$lab4' ORDER BY start_time";
 						$result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {
@@ -169,7 +174,7 @@ $lab4 = 'me110_'.$_SESSION['lab'];
 
 				<ul>
 				<?php
-                    $sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM thursday_fresher a INNER JOIN courses_fresher b ON a.id = b.id WHERE a.id = '$ee101' OR a.id = '$ce101' OR a.id = '$ma101' OR a.id = '$ph101' OR a.id='$ch101' OR a.id = '$lab1' OR a.id = '$lab2' OR a.id = '$lab3' OR a.id = '$lab4' ORDER BY start_time";
+                    $sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM thursday_fresher a INNER JOIN courses_fresher b ON a.id = b.id WHERE a.id = '$ee101t' OR a.id = '$ch101t' OR a.id = '$ma101t' OR a.id = '$ph101t' OR a.id = '$ee101' OR a.id = '$ce101' OR a.id = '$ma101' OR a.id = '$ph101' OR a.id='$ch101' OR a.id = '$lab1' OR a.id = '$lab2' OR a.id = '$lab3' OR a.id = '$lab4' ORDER BY start_time";
                     $result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {
@@ -192,7 +197,7 @@ $lab4 = 'me110_'.$_SESSION['lab'];
 
 				<ul>
 				<?php
-						$sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM friday_fresher a INNER JOIN courses_fresher b ON a.id = b.id WHERE a.id = '$ee101' OR a.id = '$ce101' OR a.id = '$ma101' OR a.id = '$ph101' OR a.id='$ch101' OR a.id = '$lab1' OR a.id = '$lab2' OR a.id = '$lab3' OR a.id = '$lab4' ORDER BY start_time";
+						$sql = "SELECT a.id, b.name, a.start_time, a.end_time, b.venue, b.event_id FROM friday_fresher a INNER JOIN courses_fresher b ON a.id = b.id WHERE a.id = '$ee101t' OR a.id = '$ch101t' OR a.id = '$ma101t' OR a.id = '$ph101t' OR a.id = '$ee101' OR a.id = '$ce101' OR a.id = '$ma101' OR a.id = '$ph101' OR a.id='$ch101' OR a.id = '$lab1' OR a.id = '$lab2' OR a.id = '$lab3' OR a.id = '$lab4' ORDER BY start_time";
 						$result = mysqli_query($conn, $sql);
 
 						if (mysqli_num_rows($result) > 0) {

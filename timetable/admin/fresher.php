@@ -152,6 +152,7 @@
                                     </div><br>
                                     <div class="select-wrapper">
                                         <select name="time" id="time">
+                                        <option value="08:00|09:00">Tutorial</option>
                                             <option value="09:00|12:00">Morning</option>
                                             <option value="14:00|17:00">Afternoon</option>
                                         </select>
