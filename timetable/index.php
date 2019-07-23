@@ -7,7 +7,7 @@
 		<title>timetable.</title>
 		<meta property="og:title" content="timetable." />
 		<meta property="og:url" content="http://www.cepstrum.in/timetable" />
-		<meta property="og:image" content="https://scontent.fhyd1-2.fna.fbcdn.net/v/t1.0-9/67492247_2328142683940511_5203606904944721920_n.jpg?_nc_cat=103&_nc_oc=AQkHTyZxF0Sib3NvAoqExO5WnmJvkm6smOVr3glP5zBP3-OJXRLHgtkuQusjz_DL37E&_nc_ht=scontent.fhyd1-2.fna&oh=e5a15bed72dd6d110dbceaf3941f2bc3&oe=5DA3D667" />
+		<meta property="og:image" content="https://scontent.fhyd1-2.fna.fbcdn.net/v/t1.0-9/67169417_2328165257271587_5605766726051430400_n.jpg?_nc_cat=100&_nc_oc=AQmwH2p9eHSbnOjhk-B5g22ce1GGfzvFNmOYLKmyDeAn1L9tWOt3K8jdLb7lpfGqdVs&_nc_ht=scontent.fhyd1-2.fna&oh=467a8f2424a193b3854e94521ee3aa0c&oe=5DA4AC8D" />
 		<meta name="author" content="Sai Bhaskar Devatha" />
 		<link rel="shortcut icon" href="assets/favicon.png" type="image/png"/>
 		<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
@@ -31,7 +31,7 @@
 	<body class="bgcolor-1">
 		<div class="container">
 			<header class="codrops-header">
-				<h1>timetable.<span>from <a href="http://www.iitg.ac.in/scifac/cep/public_html/team.html" target="_blank">team cepstrum.</a></span></h1>
+				<h1>timetable.<span>from <a href="http://www.iitg.ac.in/scifac/cep/public_html/index.html" target="_blank">team cepstrum.</a></span></h1>
 			</header>
 			<section class="content">
 				<form action="helpers/setup.php" method="POST">
