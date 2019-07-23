@@ -31,10 +31,10 @@
 					</span>	
 					<input id="rollSub" type="submit" hidden value="submit">
 				</form>
+				<p>with <i class="fa fa-heart" style="font-size:18px;color:red"></i> from <a href="http://www.iitg.ac.in/scifac/cep/public_html/index.html" target="_blank">cepstrum.</a></p>
 				
 				<p>developed by</p>
 				<h4><a href="https://www.facebook.com/saibhaskar.devatha" target="_blank">sai bhaskar devatha.</a></h4>
-				<p>with <i class="fa fa-heart" style="font-size:24px;color:red"></i>from <a href="http://www.iitg.ac.in/scifac/cep/public_html/index.html" target="_blank">cepstrum.</a></p>
 			</section>
 		</div><!-- /container -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
