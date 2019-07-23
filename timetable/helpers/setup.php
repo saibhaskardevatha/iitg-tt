@@ -26,7 +26,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $conn->query($sql3);
     }else{
         $count = $result['count']+1;
-        $sql3 = "INSERT INTO roll_count (roll, count) VALUES ($roll, $count)";
+        $sql3 = "UPDATE roll_count SET count = $count WHERE roll = $roll";
         $conn->query($sql3);
     }
     
