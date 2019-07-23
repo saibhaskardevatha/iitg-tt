@@ -23,11 +23,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
     if(empty($result)){
         $sql3 = "INSERT INTO roll_count (roll, count) VALUES ($roll, 1)";
-        $conn->query($sql1);
+        $conn->query($sql3);
     }else{
         $count = $result['count']+1;
         $sql3 = "INSERT INTO roll_count (roll, count) VALUES ($roll, $count)";
-        $conn->query($sql1);
+        $conn->query($sql3);
     }
     
     switch($year){
