@@ -47,23 +47,27 @@ $course3 = 'ee210';
 $course4 = 'ee220';
 $course5 = 'ma201';
 
-if($roll < 180102045){
+if($roll <= 180102051){
     $tut1 = 'ee220ta';
-}else if($roll < 180108010){
+}else if($roll <= 180108004){
     $tut1 = 'ee220tb';
-}else if($roll < 180108070) {
+}else if($roll <= 180108058) {
     $tut1 = 'ee220tc';
 }
 
 if($roll < 180102045){
     $tut3 = 'ma201ta';
-}else if($roll < 180108010){
+}else if($roll <= 180102088){
     $tut3 = 'ma201tb';
-}else if($roll < 180108070) {
+}else if($roll <= 180102096) {
     $tut3 = 'ma201tc';
+}else if($roll <= 180108040) {
+    $tut3 = 'ma201td';
+}else if($roll <= 180108058) {
+    $tut3 = 'ma201te';
 }
 
-if($roll < 180102045){
+if($roll < 180102049){
     $tut2 = 'ee204ta';
 }else if($roll < 180102100){
     $tut2 = 'ee204tb';
@@ -72,11 +76,11 @@ if($roll < 180102045){
 }
 
 
-if($roll < 180102045){
+if($roll <= 180102051){
     $lab = 'ee211a';
-}else if($roll < 180108010){
+}else if($roll <= 180108004){
     $lab = 'ee211b';
-}else if($roll < 180108070) {
+}else if($roll <= 180108058) {
     $lab = 'ee211c';
 }
 
