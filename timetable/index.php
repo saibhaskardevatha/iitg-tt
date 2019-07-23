@@ -7,7 +7,7 @@
 		<title>timetable.</title>
 		<meta property="og:title" content="timetable." />
 		<meta property="og:url" content="http://www.cepstrum.in/timetable" />
-		<meta property="og:image" content="https://imgur.com/gQuaa6K" />
+		<meta property="og:image" content="https://i.ibb.co/qkJwSxP/Capture1.jpg" />
 		<meta name="author" content="Sai Bhaskar Devatha" />
 		<link rel="shortcut icon" href="assets/favicon.png" type="image/png"/>
 		<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
@@ -31,7 +31,7 @@
 	<body class="bgcolor-1">
 		<div class="container">
 			<header class="codrops-header">
-				<h1>timetable.<span>from <a href="http://www.iitg.ac.in/scifac/cep/public_html/index.html" target="_blank">team cepstrum.</a></span></h1>
+				<h1>timetable.<span>from <a href="http://www.iitg.ac.in/scifac/cep/public_html/team.html" target="_blank">team cepstrum.</a></span></h1>
 			</header>
 			<section class="content">
 				<form action="helpers/setup.php" method="POST">
