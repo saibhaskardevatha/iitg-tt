@@ -5,6 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>timetable.</title>
+		<meta property="og:title" content="timetable." />
+		<meta property="og:url" content="http://www.cepstrum.in/timetable" />
+		<meta property="og:image" content="https://imgur.com/gQuaa6K" />
 		<meta name="keywords" content="iitg, guwahati, iit, timetable, academic, calendar, ece, eee" />
 		<meta name="author" content="Sai Bhaskar Devatha" />
 		<link rel="shortcut icon" href="assets/favicon.png" type="image/png"/>
