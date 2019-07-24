@@ -66,8 +66,7 @@ $lab4 = 'me110_'.$_SESSION['lab'];
 ?>
 <header class="cd-intro">
     <h1>timetable.</h1>
-    <h3>
-        <a href="../">Home</a>
+    <h3>Not <?php echo $roll;?>? Go to <a href="../">Home</a>
         <a href="https://www.facebook.com/saibhaskar.devatha" target='_blank'>Developer</a>
     </h3>
 </header>
