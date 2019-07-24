@@ -93,7 +93,7 @@ $lab4 = 'me110_'.$_SESSION['lab'];
 			<li><span>16:30</span></li>
 			<li><span>17:00</span></li>
 		</ul>
-	</div> <!-- .timeline -->
+	</div>
 
 	<div class="events">
 		<ul>
