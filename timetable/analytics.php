@@ -12,5 +12,6 @@
     $result = mysqli_fetch_assoc($result);
 
     echo 'Unique Count :'.$result['count1'];
+    echo '<br>';
     echo 'Total Views :'.$result['count2'];
 ?>
