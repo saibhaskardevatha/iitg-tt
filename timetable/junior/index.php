@@ -69,16 +69,16 @@ if($roll < 170102100){
     $course4 = 'ee382';
 }
 
-if($roll < 170102045){
-    $lab = 'ee331a';
-}else if($roll < 170108010){
-    $lab = 'ee331b';
-}else if($roll < 170108050) {
+if($roll < 170102049){
     $lab = 'ee331c';
+}else if($roll < 170108000){
+    $lab = 'ee331a';
+}else if($roll < 170108050) {
+    $lab = 'ee331b';
 }
 
 if($roll < 170102045){
-    $lab2 = 'ee311a';
+    $lab2 = 'ee311b';
 }else if($roll < 170108000){
     $lab2 = 'ee311b';
 }else if($roll < 170108025) {
